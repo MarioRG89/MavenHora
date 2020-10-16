@@ -31,7 +31,11 @@ public class Hora extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		out.print("<html> <body>");
+		out.print("<h1> La fecha actual es :  " + new Date() + "</h1>");
+		out.print("</body></html>");
 	}
 
 	/**
@@ -40,11 +44,7 @@ public class Hora extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
-		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		out.print("<html> <body>");
-		out.print("<h1> La fecha actual es :  " + new Date() + "</h1>");
-		out.print("</body></html>");
+		
 	}
 
 }

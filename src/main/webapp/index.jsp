@@ -1,9 +1,6 @@
 <html>
 <body>
 	<h2>Bienvenido</h2>
-	<form action="http://localhost:8080/EjercicioHora/Hora" method="post">
-		<label >Quieres saber la hora</label> 
-		<input type="submit" value="Pulsa aqui para ver la hora" >
-	</form>
+	<p>Pulse el siguiente enlace para ver la hora <a href="http://localhost:8080/EjercicioHora/Hora" >ver hora</a>
 </body>
 </html>
